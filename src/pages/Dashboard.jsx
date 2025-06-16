@@ -5,8 +5,9 @@ import Sidebar from "../components/layout/Sidebar";
 import TopBar from "../components/layout/TopBar";
 import StatsCards from "../components/dashboard/StatsCards";
 import TaskList from "../components/dashboard/TaskList";
-import CalendarPreview from "../components/dashboard/CalendarPreview";
+
 import { Plus } from "lucide-react";
+import CalendarPreview from "../components/dashboard/CalendarPreview";
 
 const Dashboard = () => {
   const { user, tasks, darkMode } = useAppContext();
@@ -85,7 +86,6 @@ const Dashboard = () => {
                   <TaskList tasks={tasks} />
                 </div>
               </div>
-
               {/* Calendar Preview */}
               <CalendarPreview />
             </div>
